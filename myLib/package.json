@@ -1,0 +1,16 @@
+{
+  "name": "@myorg/mylib",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rm -rf package/lib && mkdir -p package/lib/components/SomeComponent && node_modules/@babel/cli/bin/babel.js src/index.js -o package/lib/index.js && node_modules/@babel/cli/bin/babel.js src/components/SomeComponent/index.jsx -o package/lib/components/SomeComponent/index.js"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}

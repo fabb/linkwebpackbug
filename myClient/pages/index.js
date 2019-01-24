@@ -1,9 +1,6 @@
-import Link from 'next/link'
+import { SomeComponent } from "@myorg/mylib";
 export default () => (
   <div>
-    Hello World.{' '}
-    <Link href='/about'>
-      <a>About</a>
-    </Link>
+    <SomeComponent />
   </div>
-)
+);

@@ -4,9 +4,11 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "link_myLib": "cd ../myLib/package && npm link && cd ../../myClient && npm link @myorg/mylib"
   },
   "dependencies": {
+    "@myorg/mylib": "../myLib/package",
     "next": "7.0.2",
     "react": "16.7.0",
     "react-dom": "16.7.0"
