@@ -2,7 +2,7 @@
   "name": "@myorg/mylib",
   "version": "0.0.0",
   "scripts": {
-    "build": "rm -rf package/lib && mkdir -p package/lib/components/SomeComponent && node_modules/@babel/cli/bin/babel.js src/index.js -o package/lib/index.js && node_modules/@babel/cli/bin/babel.js src/components/SomeComponent/index.jsx -o package/lib/components/SomeComponent/index.js"
+    "build": "rm -rf package/lib && mkdir -p package/lib && node_modules/@babel/cli/bin/babel.js src --out-dir package/lib"
   },
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
