@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "link_myLib": "cd ../myLib/package && npm link && cd ../../myClient && npm link @myorg/mylib"
+    "link_myLib": "cd ../myLib/package && npm link && cd ../../myClient && npm link @myorg/mylib",
+    "demonstrate_bug": "npm i && npm run link_myLib && cd ../myLib && npm i && npm run build && cd ../myClient && npm run dev"
   },
   "dependencies": {
     "@myorg/mylib": "../myLib/package",
