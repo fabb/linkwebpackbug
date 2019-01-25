@@ -1,18 +1,28 @@
 {
-  "name": "hello-world",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "link_myLib": "cd ../myLib/package && npm link && cd ../../myClient && npm link @myorg/mylib",
-    "demonstrate_bug": "npm i && npm run link_myLib && cd ../myLib && npm i && npm run build && cd ../myClient && npm run dev"
-  },
+  "name": "my-client-2-cra",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@myorg/mylib": "../myLib/package",
-    "next": "7.0.2",
-    "react": "16.7.0",
-    "react-dom": "16.7.0"
+    "@myorg/mylib": "file:../myLib/package",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3"
   },
-  "license": "ISC"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "link_myLib": "cd ../myLib/package && npm link && cd ../../myClient && npm link @myorg/mylib",
+    "demonstrate_bug": "npm i && npm run link_myLib && cd ../myLib && npm i && npm run build && cd ../myClient && npm run start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
